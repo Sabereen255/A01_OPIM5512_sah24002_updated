@@ -12,7 +12,6 @@ df = housing.frame
 print(df.head())
 print(df.shape)
 
-
 # Create boxplot figure
 df.boxplot(figsize=(12, 6))
 
@@ -20,4 +19,8 @@ plt.title("California Housing Dataset Boxplot")
 plt.xticks(rotation=45)
 plt.tight_layout()
 
+# Save figure inside the figs folder
+plt.savefig("figs/boxplot.png")
+
+# Show the figure
 plt.show()
